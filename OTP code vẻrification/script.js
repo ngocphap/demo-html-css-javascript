@@ -43,12 +43,22 @@ inputs.forEach((input, index1) => {
     }
     //if input thứ 4 không trống và không có disabled
     //add lớp active , nếu không thì xóa active
-    if (!inputs[3].disabled && inputs[3].value !== "") {
+    if (
+      !inputs[3].disabled &&
+      inputs[3].value !== ""
+      // inputs[3].value !== undefined
+    ) {
       button.classList.add("active");
       return;
+    } else if (
+      inputs[3].value == "" ||
+      inputs[3].value == null ||
+      inputs[3].value == undefined
+    ) {
+      button.classList.remove("active");
+      // return;
     }
     button.classList.remove("active");
-    console.log("aaa" + inputs[3].value);
   });
 });
 
