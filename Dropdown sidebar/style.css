@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    /* background: red; */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background: #11101d;
+}
+
+.sidebar .lodo-details {}
+
+.sidebar .logo-details i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.sidebar .logo-details,
+.logo_name {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.sidebar .nav-link {
+    background: red;
+    height: 100%;
+}
